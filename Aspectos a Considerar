@@ -1,0 +1,38 @@
+DE FOTO DE GABY:
+Hay que ver que nos falta considerar y abstraerlo en sus RU y RS
+
+Que el usuario pueda dar de alta, baja y modificar lo siguiente:
+
+Membresías Tipo: ABC
+Clientes/Usuarios (+18,-18)
+Sucursal
+Áreas (Acceso según Membresía, Cupo Máximo, cosas que hay en ellas, características, etc)
+Instructor
+Servicios
+Actividad (En área determinada, hay un instructor a cargo del área)
+Clase (Actividad con Instructor Asignado a impartirlo)
+Curso (Cupo Máximo, es como clase pero tiene repetición)
+
+Dentro de Venta Membresías:
+  Venta
+  Renovación
+  Cancelación
+  Cambio
+  Pago Mensual
+  Transferencia
+  Fiscalización
+  Datos Médicos
+  Inscripción a Ser, Act, Clase y Curso
+  
+Conrol del Acceso de las Áreas
+
+Campos de Comentarios para estadística de las Actividades, Clases y Cursos
+  Cuánto ingreso deja qué cosa?
+  Cuánto se debío haber vendido?
+  Cuánto se esperaba vender al mes?
+  % Ocupabilidad en las diferentes Act, Ser, Cur
+  
+Es lo que alcanzo a ver, que más le agregamos??
+
+Y vayan tomando una de estas abstracciones para irle avanzando antes de programar y checar si ya tenemos los RU y RS
+o si hay que hacerlos de cero, sale?
