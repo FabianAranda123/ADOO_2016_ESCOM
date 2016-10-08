@@ -1,0 +1,6 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {0.1}Prop\'osito}{4}
+\contentsline {section}{\numberline {0.2}Definiciones, Acr\'onimos y Abreviaciones}{5}
+\contentsline {section}{\numberline {0.3}Objetivos del sistema}{5}
+\contentsline {section}{\numberline {0.4}Requerimientos de Usuario}{8}
+\contentsline {section}{\numberline {0.5}Requerimientos de Sistema}{8}

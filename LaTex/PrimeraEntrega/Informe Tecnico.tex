@@ -1,0 +1,72 @@
+
+\documentclass[a4paper, openany, 12pt]{book}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\setcounter{secnumdepth}{3} %para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+	%\title{Sistema de Gesti\'on para Gimnasio \textbf{El panchito}}
+	%\author{
+		%Aranda Quintero Fabi\'an \\
+		%Arreola Sandoval Manuel Jes\'us \\
+		%Esteva Angeles Adrian \\
+		%Negrete Pimentel Fernando \\
+		%P\'erez Arteaga Gabriela Alejandra
+	%}
+	%\date{05/10/2016}
+
+\begin{document}
+\begin{titlepage}
+
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=15cm]{logo3}
+\end{center}
+\end{figure}
+
+\textbf{INSTITUTO POLIT\'ECNICO NACIONAL}\\
+\vspace*{0.15in}
+ESCUELA SUPERIOR DE C\'OMPUTO\\
+\vspace*{0.6in}
+\begin{large}
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{Sistema de Gesti\'on para Gimnasio} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+\vspace*{0.5in}
+PRESENTA:\\
+Aranda Quintero Fabi\'an \\
+Arreola Sandoval Manuel Jes\'us \\
+Esteva Angeles Adrian \\
+Negrete Pimentel Fernando \\
+P\'erez Arteaga Gabriela Alejandra
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Prof. Ulises Velez\\
+\end{large}
+\vspace*{0.3in}
+\begin{large}
+Fecha: 05/10/2016
+\end{large}
+\end{center}
+
+\end{titlepage}
+\newpage
+$\ $
+\thispagestyle{empty} % para que no se numere esta p�gina
+\tableofcontents		%indice de contenidos
+
+\input{introduccion}
+\input{analisis}
+\input{requerimientos}
+
+\end{document}
