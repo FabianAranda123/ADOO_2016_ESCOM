@@ -12,9 +12,11 @@
 \textbf{Nombre: }
 \textbf{Descripci\'on: }
 
-\textbf{ID: }
-\textbf{Nombre: }
-\textbf{Descripci\'on: }
+\textbf{ID: RU7}
+\textbf{Nombre: Registro se servicios  }
+\textbf{Descripci\'on: } El usuario necesita tener un registro de los servicios con los que cuenta el gimnasio como por ejemplo los lockers y las las regaderas,  para así saber qué clientes los están usando y poder llevar un control entre los servicios y clientes.\\
+
+
 
 \section{Requerimientos de Sistema}
 \textbf{ID: } RS1 \\
@@ -191,44 +193,118 @@ Descripción: El sistema tendrá diferencias entre cada tipo de membresía contr
 ID: RS15
 Nombre: Pago
 Descripción: El sistema relacionarán los pagos relacionados en la oficina con la membresía que se quiere contratar.
+\vspace*{0.3in}
+\rule{150mm}{0.1mm}\\
+\vspace*{0.1in}
 
-ID: RS16
-Nombre: Registro de servicios
-Descripción: El sistema debe registrar la variedad servicios que tiene el gimnasio. Al contratar un membresía, se le asignan los servicios correspondientes a esta. Por lo que es necesario llevar un gestión de los servicios que se ofrecen.
+\textbf{ID:} RS16 \\
+\textbf{Nombre: } Registro de servicios  \\
+\textbf{Descripci\'on: } El sistema debe registrar la variedad servicios que tiene el gimnasio. Al contratar un membresía, se le asignan los servicios correspondientes a esta. Por lo que es necesario llevar una gestión de los servicios que se ofrecen. 
 
 El administrador podrá realizar las siguientes tareas:
-Alta de servicios: incorporación de un servicio en el gimnasio
-Baja de servicios: eliminación de un servicio en el gimnasio.
-Entradas:
-ID del servicio
-           Nombre del servicio
-          Encargado del servicio (puede existir o no)
-          Área donde se encuentra el servicio
-          Clientes que usan el servicio.
- 
-Origen: Teclado
-Salidas: El sistema mostrará en pantalla los servicios que se ofrecen en ese momento para que los clientes puedan acceder a ellos dependiendo su membresía.
-
-Precondiciones:
--Deben existir algún tipo de membresía.
--Cliente activo
--Verificar que dicho servicio no se encuentre en la base de datos.
--Postcondiciones:
-             Existirá un nuevo servicio disponible en el sistema.
-         El sistema podrá asignar algún servicio a un cliente en las distintas membresías de     los clientes 
- 
-Errores:
- -En el momento de registrar un servicio, existe la posibilidad de que los tipos   de datos esperados  no corresponden.
+Alta de servicios: incorporación de un servicio en el gimnasio.\\
+\textbf{Entradas: } 
+    \begin{itemize}
+	 \item Nombre del servicio
+         \item Encargado del servicio (puede existir o no)
+         \itemÁrea donde se encuentra el servicio.
+	 \itemFecha de alta del servicio
+	 \item Nombre de sucursal donde se encuentra el servicio
+	 \itemDisponibilidad(puede existir o no)
+	 \itemHorario de servicio\\
+ \end{itemize}
+          
+\textbf{Origen: }  Teclado.\\
+\textbf{Salida: }  El sistema mostrará en pantalla los servicios que se ofrecen en ese momento para que los clientes puedan acceder a ellos dependiendo de su membresía.\\
+\textbf{Destino: }  Base de datos \\
+\textbf{Pre-condiciones }  
+-Deben existir algún tipo de membresía.\\
+-Verificar que dicho servicio no se encuentre en la base de datos.\\
+-El servicio tenga la suficiente demanda para ser dado de alta.\\
+\textbf{Pos-condiciones: }  
+-Existirá un nuevo servicio disponible en el sistema.\\
+-El sistema podrá asignar algún servicio a un cliente en las distintas membresías. \\
+\textbf{Errores: }  \\
+-En el momento de registrar un servicio, existe la posibilidad de que los tipos   de datos esperados  no correspondan.
 -Caída de sistema durante el procesamiento de información.
--Falta de datos por llenar.
+-Falta de datos por llenar.\\
+\textbf{Observaciones: }  \\
+	 
 
-Observaciones:
+-Los servicios se pueden dar de alta en el sistema puede depender de la demanda que exista entre los clientes. \\
+-Servicios a definirse por sucursal.\\
+-Existe la posibilidad que algunos servicios estén sujetos a cupo por lo que un cliente pueden cambiar de un servicio fuese el caso.\\
+\tectbf{Requisito relacionado:} 
 
--Los servicios se pueden dar de alta en el sistema puede depender de la demanda que exista entre los clientes. 
--Servicios a definirse por sucursal.
--Existe la posibilidad que algunos servicios estén sujetos a cupo por lo que un cliente pueden cambiar de un servicio fuese el caso.
+\vspace*{0.3in}
+\rule{150mm}{0.1mm}\\
+\vspace*{0.1in}
 
-Requisito relacionado: RU7
+\textbf{ID:} RS\\
+\textbf{Nombre:}  Baja de servicios \\
+\textbf{Descripción:} El sistema debe realizar la eliminacion de algun tipo de servicio en caso de que sea necesario y el gimnasio lo requiera.
+El administrador podrá realizar las siguientes tareas:
+Eliminar servicio: baja de un servicio en el gimnasio. \\
+\textbf{Entradas:} 
+  
+  \begin{itemize}
+		
+		\item ID Servicio
+ \end{itemize}
+
+\textbf{Origen:}  Teclado.\\
+\textbf{Salidas:}  \\
+\textbf{Destino:} Base de datos \\
+-El sistema mostrara en pantalla que el servicio ha sido eliminado satisfactoriamente.\\  
+\textbf{Precondiciones:} 
+-El servicio exista en la base de datos.\\
+-Los clientes y beneficiarios esten de acuerdo de la eliminacion del servicio.
+\textbf{Postcondiciones:} 
+-El servicio eliminado no estara en la base de datos.
+-Los servicios que ofrecen las membresias cambiaran. \\
+-No existira el acceso a dicho servicio.\\
+\textbf{Errores:} 
+-El servicio no se encuentre en la base de datos.\\
+-El servicio ya se haya eliminado.\\
+\textbf{Observaciones:} 
+-Los servicios que ofrecen una sucursal pueden ser diferentes a las de otra sucursal.
+-Los servicios se pueden tomar en otra sucursal distinta si así lo desea.\\
+
+
+\vspace*{0.3in}
+\rule{150mm}{0.1mm}\\
+\vspace*{0.1in}
+
+\textbf{ID:} \\
+\textbf{Nombre: } Modificacion de servicios \\
+\textbf{Descripci\'on:} El sistema debe realizar modificaciones en alguno de los datos de los servicios que se ofrecen si se requieren, esto con la finalidad de mantener la informacion actualizada y disponible para clientes y beneficiarios. No todos los datos puede ser modificados, como el ID de servicio, fecha de alta y nombre sel servicio. 
+
+El administrador podrá realizar las siguientes tareas:
+Modificación de servicios: Modificacion de informacion de un servicio en el gimnasio.\\
+
+\textbf{Entradas:} 
+\begin{itemize}
+          		
+          \item Encargado del servicio (puede existir o no)
+          \item Área donde se encuentra el servicio.
+	  \item Disponibilidad(puede existir o no)
+	  \item Horario de servicio
+	  
+		
+	\end{itemize}
+      
+\textbf{Origen:} Teclado  \\
+\textbf{Salida: Mensaje de Pantalla del sistema de mofificacion realizada }  \\
+\textbf{Destino: Base de datos }  \\
+\textbf{Pre-condiciones }  
+-Que el servicio exista en la base de datos.
+-Exigencias de clientes tanto de beneficiarios
+\\
+\textbf{Pos-condiciones: } 
+-La base de datos tendrá nuevos valores en los campos que fueron modificados
+-si cambia la disponibilidad, existe la posibiliad de que se pueda registrar un servicio\\
+\textbf{Observaciones: } No se puede bajar la disponibilidad de los algunos de los servicios ya que romperia con las reglas de gimnasio, en caso de que sea así, el cliente o beneficiario pueden realizar cambio de servicio. \\
+
 
 
 ID: RS17
