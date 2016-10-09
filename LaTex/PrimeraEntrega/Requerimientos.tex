@@ -18,101 +18,102 @@
 
 \section{Requerimientos de Sistema}
 \textbf{ID: } RS1 \\
-\textbf{Nombre:} Puertas elÈctricas \\
-\textbf{DescripciÛn:} El sistema permite/restringe el acceso a las instalaciones mediante puertas elÈctricas que se abren al presentar un PIN personal de seguridad.\\
+\textbf{Nombre:} Puertas el√©ctricas \\
+\textbf{Descripci√≥n:} El sistema permite/restringe el acceso a las instalaciones mediante puertas el√©ctricas que se abren al presentar un PIN personal de seguridad.\\
 
 \textbf{ID: } RS2\\
 \textbf{Nombre: }Registro del cliente\\
-\textbf{DescripciÛn:} El sistema debe registrar la informaciÛn de los clientes. Los clientes pueden ser personas fÌsicas o personas morales. Cada cliente debe estar identificado mediante un n˙mero ˙nico, el usuario del sistema podr· gestionar las la funciÛn que se muestra a continuaciÛn:\\
+\textbf{Descripci√≥n:} El sistema debe registrar la informaci√≥n de los clientes. Los clientes pueden ser personas f√≠sicas o personas morales. Cada cliente debe estar identificado mediante un n√∫mero √∫nico, el usuario del sistema podr√° gestionar las la funci√≥n que se muestra a continuaci√≥n:\\
 	\begin{itemize} 
-		\item Alta de cliente: incorporaciÛn de un nuevo cliente al gimnasio.
+		\item Alta de cliente: incorporaci√≥n de un nuevo cliente al gimnasio.
 	\end{itemize}
-TambiÈn es muy importante el control del estado del cliente. Un cliente, por el sÛlo hecho de figurar en las tablas del sistema gestor del gimnasio no indica que tenga autorizaciÛn para usar las instalaciones o servicios del mismo, ya que debe pagar adquirir una de las distintas membresÌas que ofrece el gimnasio.\\
+Tambi√©n es muy importante el control del estado del cliente. Un cliente, por el s√≥lo hecho de figurar en las tablas del sistema gestor del gimnasio no indica que tenga autorizaci√≥n para usar las instalaciones o servicios del mismo, ya que debe pagar adquirir una de las distintas membres√≠as que ofrece el gimnasio.\\
 
 \textbf{Entradas:}
 \begin{itemize}
-	\item ID Cliente(PIN personalizado)
 	\item Curp
 	\item RFC
 	\item Nombre
 	\item Apellido paterno
 	\item Apellido materno
-	\item Calle
-	\item N˙mero interior
-	\item N˙mero exterior
-	\item CÛdigo postal
-	\item N˙mero celular
-	\item N˙mero casa
+	\item Calle 
+	\item N√∫mero interior
+	\item N√∫mero exterior
+	\item C√≥digo postal
+	\item Delegaci√≥n/Municipio
+	\item N√∫mero celular
+	\item N√∫mero casa
 	\item Fecha de nacimiento
-	\item Correo electrÛnico
+	\item Correo electr√≥nico
 	\item Sexo
 	\item Fecha de alta al gimnasio
+	\item Nombre de sucursal de alta 
 \end{itemize}
 \textbf{Origen:} Teclado\\
-\textbf{Salidas:} Correo de bienvenida al gimnasio, lo que dar· por entendido de que fue un registro exitoso.\\
+\textbf{Salidas:} El sistema debe mostrar un mensaje en pantalla de registro exitoso.\\
 \textbf{Precondiciones:}
 \begin{itemize}
-	\item El cliente necesariamente debe tener la edad de 18 aÒos para poder ser dado de alta en el sistema y poder acceder a los servicios del gimnasio.
+	\item El cliente necesariamente debe tener la edad de 18 a√±os para poder ser dado de alta en el sistema y poder acceder a los servicios del gimnasio.
 	\item Para un registro exitoso el cliente no debe existir en la base de datos para no provocar fallos en el sistema, como por ejemplo, tener dos veces al mismo cliente
-	\item El cliente debe ser apto para realizar actividad fÌsica con la finalidad de evitar  afectar su salud.
+	\item El cliente debe ser apto para realizar actividad f√≠sica con la finalidad de evitar  afectar su salud.
 \end{itemize}
-No se permitir· el registro exitoso de aquellos usuarios que cuenten con algunas de  las siguientes enfermedades: \\
+No se permitir√° el registro exitoso de aquellos usuarios que cuenten con algunas de  las siguientes enfermedades: \\
 \begin{itemize}
-	\item CrÛnicas
+	\item Cr√≥nicas
 	\item Generativas
-	\item GenÈticas
+	\item Gen√©ticas
 	\item Mentales
 	\item Respiratorias
 	\item Cardiovasculares
-	\item No se permitir· el registro a personas con capacidades diferentes, esto evitar· posibles problemas al gimnasio en caso de accidente.
+	\item No se permitir√° el registro a personas con capacidades diferentes, esto evitar√° posibles problemas al gimnasio en caso de accidente.
 \end{itemize}
 	
 \textbf{Postcondiciones:}\\
-El sistema mostrar· la existencia un nuevo cliente. \\
-El sistema podr· dar acceso a los servicios con los que cuenta al nuevo cliente en cualquiera de sus sucursales.\\
+El sistema mostrar√° la existencia un nuevo cliente. \\
+El sistema podr√° dar acceso a los servicios con los que cuenta al nuevo cliente en cualquiera de sus sucursales.\\
 
 \textbf{Errores:}\\
 
-En el momento de registrar un nuevo cliente, existe la posibilidad de que los tipos de datos esperados  no corresponden. Por lo que se volver· a pedir los datos donde exista este problema.\\
+En el momento de registrar un nuevo cliente, existe la posibilidad de que los tipos de datos esperados  no corresponden. Por lo que se volver√° a pedir los datos donde exista este problema.\\
 Falta de datos por llenar.\\
-CaÌda durante el procesamiento de informaciÛn.\\
+Ca√≠da durante el procesamiento de informaci√≥n.\\
 
 \textbf{Observaciones:}\\
-      N˙mero de registros de clientes por definirse \\
+      N√∫mero de registros de clientes por definirse \\
 \textbf{Requisito relacionado: }RU6		\\
 \vspace*{0.2in}
 
 \textbf{ID:} RS3\\
 \textbf{Nombre:} Baja de cliente\\
-\textbf{DescripciÛn:} El sistema debe permitir la eliminaciÛn de un cliente que se encuentre en el sistema del gimnasio en caso de que este lo desee.\\
+\textbf{Descripci√≥n:} El sistema debe permitir la eliminaci√≥n de un cliente que se encuentre en el sistema del gimnasio en caso de que este lo desee.\\
 
 \textbf{Entradas: }
 ID Cliente (PIN personalizado)\\
 \textbf{Origen:} Teclado\\
-\textbf{Salidas:} ConfirmaciÛn en el sistema de que el usuario asÌ como todos sus registros ya no existen en la base de datos, es decir que fue un baja exitosa.\\
-\textbf{Destino:} El sistema enviar· un correo de usuario el cual dir· que ya no pertenece al Gimnasio AtlÈtico de San Pancho.\\
-\textbf{PrecondiciÛn: }
+\textbf{Salidas:} Confirmaci√≥n en el sistema de que el usuario as√≠ como todos sus registros ya no existen en la base de datos, es decir que fue un baja exitosa.\\
+\textbf{Destino:} Se mostrara en la pantalla del sistema que el cliente y su informacion han sido eliminados exitosamente.\\
+\textbf{Precondici√≥n: }
 -El cliente debe confirmar que desea darse de baja en el gimnasio.\\
 -Para eliminar a un cliente es necesario que este se encuentre en la base de datos. \\
-\textbf{PostcondiciÛn: }
--El sistema del Gimnasio AtlÈtico San Pancho tendr· un usuario menos en la base de datos.\\
--El sistema contar· con m·s espacio de memoria.\\
+\textbf{Postcondici√≥n: }
+-El sistema del Gimnasio Atl√©tico San Pancho tendr√° un usuario menos en la base de datos.\\
+-El sistema contar√° con m√°s espacio de memoria.\\
 
 \textbf{Errores: }
 
--Que el cliente ya estÈ dado de baja por lo que no se encontrarÌa en la base de datos.\\
--Que la informaciÛn proporcionada no sea la correcta para dar de baja.\\
+-Que el cliente ya est√© dado de baja por lo que no se encontrar√≠a en la base de datos.\\
+-Que la informaci√≥n proporcionada no sea la correcta para dar de baja.\\
 \textbf{Observaciones: }\\
 
--Ser· decisiÛn y responsabilidad del cliente aceptar y salir del Gimnasio AtlÈtico de San Pancho.\\
+-Ser√° decisi√≥n y responsabilidad del cliente aceptar y salir del Gimnasio Atl√©tico de San Pancho.\\
 -Un cliente no puede ser dado de baja sin su debido consentimiento.\\
      \textbf{Requisito relacionado:} RU6\\
 
 \textbf{ID:} RS4\\
-\textbf{Nombre:} ModificaciÛn de informaciÛn del cliente \\
-\textbf{DescripciÛn:} El sistema debe permitir modificar datos de cliente para que los datos siempre puedan ser verÌdicos. Algunos datos que pueden ser modificables son telÈfono, correo electrÛnico, domicilio, etc. Cabe mencionar que los RFC, CURP,ID cliente(PIN personalizado)  Y SEXO son datos que no pueden ser modificados.\\
-El usuario de sistema gestionar· la siguiente funciÛn que se muestra a continuaciÛn\\
-   ModificaciÛn cliente: modificar los datos de un cliente que est· previamente en la base de datos.\\
+\textbf{Nombre:} Modificaci√≥n de informaci√≥n del cliente \\
+\textbf{Descripci√≥n:} El sistema debe permitir modificar datos de cliente para que los datos siempre puedan ser ver√≠dicos. Algunos datos que pueden ser modificables son tel√©fono, correo electr√≥nico, domicilio, etc. Cabe mencionar que los RFC, CURP,ID cliente(PIN personalizado)  Y SEXO son datos que no pueden ser modificados.\\
+El usuario de sistema gestionar√° la siguiente funci√≥n que se muestra a continuaci√≥n\\
+   Modificaci√≥n cliente: modificar los datos de un cliente que est√° previamente en la base de datos.\\
 
 \textbf{Entradas: }
 	\begin{itemize}
@@ -129,156 +130,287 @@ El usuario de sistema gestionar· la siguiente funciÛn que se muestra a continuac
 		\item Correo electronico
 	\end{itemize}
 \textbf{Origen:} Teclado\\
-\textbf{Salidas:} El sistema mostrar· un pequeÒo mensaje que los datos han sido modificados exitosamente.\\
+\textbf{Salidas:} El sistema mostrar√° un peque√±o mensaje que los datos han sido modificados exitosamente.\\
 \textbf{Destino:} Ninguno\\
-\textbf{PrecondiciÛn: }\\
--Deben existir datos errÛneos en la informaciÛn del cliente.\\
-\textbf{PostcondiciÛn:}\\
--La base de datos tendr· nuevos valores en los campos que fueron modificados\\
+\textbf{Precondici√≥n: }\\
+-Deben existir datos err√≥neos en la informaci√≥n del cliente.\\
+\textbf{Postcondici√≥n:}\\
+-La base de datos tendr√° nuevos valores en los campos que fueron modificados\\
 \textbf{Errores: }\\
 
-Existe la posibilidad de que la informaciÛn del nombre del cliente este mal en cuestiÛn de detalles mÌnimos como acento o una letra, estos errores son muy comunes por lo que el cliente tanto como el administrador deben ser cuidados y verificar los datos antes de dar de alta a un cliente\\
+Existe la posibilidad de que la informaci√≥n del nombre del cliente este mal en cuesti√≥n de detalles m√≠nimos como acento o una letra, estos errores son muy comunes por lo que el cliente tanto como el administrador deben ser cuidados y verificar los datos antes de dar de alta a un cliente\\
 
 \textbf{Observaciones: }
-Los informaciÛn como el ID de cliente (PIN personalizado), RFC, CURP SEXO, NOMBRE no pueden ser modificados ya que es informaciÛn ˙nica e intransferible y no puede estar cambiando.\\
+Los informaci√≥n como el ID de cliente (PIN personalizado), RFC, CURP SEXO, NOMBRE no pueden ser modificados ya que es informaci√≥n √∫nica e intransferible y no puede estar cambiando.\\
 
-Los datos a modificar ser·n definidos por el cliente \\
+Los datos a modificar ser√°n definidos por el cliente \\
 \textbf{Requisito relacionado:} RU16\\
  
 
   
 \textbf{ID:} RS5\\
-\textbf{Nombre:} ComprobaciÛn sobre informaciÛn repetida de cliente\\
-\textbf{DescripciÛn:} El sistema debe comprobar si la informaciÛn de cliente no existe. En ese caso, proceder· a realizar una actualizaciÛn de datos. \\
+\textbf{Nombre:} Comprobaci√≥n sobre informaci√≥n repetida de cliente\\
+\textbf{Descripci√≥n:} El sistema debe comprobar si la informaci√≥n de cliente no existe. En ese caso, proceder√° a realizar una actualizaci√≥n de datos. \\
 
 \textbf{ID:} RS6\\
-\textbf{Nombre:} GestiÛn de empleados \\
-\textbf{DescripciÛn:} El sistema debe gestionar a los trabajadores que laboran en el Gimnasio que imparten clases en horarios previamente definidos. \\ 
+\textbf{Nombre:} Gesti√≥n de empleados \\
+\textbf{Descripci√≥n:} El sistema debe gestionar a los trabajadores que laboran en el Gimnasio que imparten clases en horarios previamente definidos. \\ 
 
 \textbf{ID:} RS7\\
 \textbf{Nombre:} Control y acceso de actividades del Gimnasio \\
-\textbf{DescripciÛn:} El sistema debe ser capaz de gestionar las diversas actividades que se llevan a cabo en las instalaciones del Gimnasio, adem·s de  verificar aquellos  usuarios que tienen permisos o no de acceder a una actividad, actividades como Pilates, Aerobic, Spinning, Yoga, Abdominales etc.\\
+\textbf{Descripci√≥n:} El sistema debe ser capaz de gestionar las diversas actividades que se llevan a cabo en las instalaciones del Gimnasio, adem√°s de  verificar aquellos  usuarios que tienen permisos o no de acceder a una actividad, actividades como Pilates, Aerobic, Spinning, Yoga, Abdominales etc.\\
 \textbf{Requisitos relacionados:} RU1\\
 
 \textbf{ID:} RS8\\
 \textbf{Nombre:} Consultas en sistema\\
-\textbf{DescripciÛn:} La aplicaciÛn deber· poder mostrar consultas sobre cualquier cliente, proveedor, profesional, producto.. Al realizar una consulta el programa acceder· a la base de datos para poder tomar la informaciÛn que el usuario quiere realizar. Se tendr· que tener en cuenta quÈ tipo de usuario es y quÈ permisos de consultas tiene.\\
+\textbf{Descripci√≥n:} La aplicaci√≥n deber√° poder mostrar consultas sobre cualquier cliente, proveedor, profesional, producto.. Al realizar una consulta el programa acceder√° a la base de datos para poder tomar la informaci√≥n que el usuario quiere realizar. Se tendr√° que tener en cuenta qu√© tipo de usuario es y qu√© permisos de consultas tiene.\\
 
 \textbf{ID:} RS9\\
-\textbf{Nombre:}  AdministraciÛn de proveedores\\
-\textbf{DescripciÛn:} Se busca llevar una manera eficaz de saber quienes son los proveedores de los materiales, equipo y productos que se utilizan en el gimnasio, asÌ como un registro de las compras realizadas con dichos proveedores, incluyendo datos como: nombre, fecha de compra, producto/material/equipo, cantidad.\\
+\textbf{Nombre:}  Administraci√≥n de proveedores\\
+\textbf{Descripci√≥n:} Se busca llevar una manera eficaz de saber quienes son los proveedores de los materiales, equipo y productos que se utilizan en el gimnasio, as√≠ como un registro de las compras realizadas con dichos proveedores, incluyendo datos como: nombre, fecha de compra, producto/material/equipo, cantidad.\\
 
 \textbf{ID:} RS10\\
-\textbf{Nombre:} Control de ·reas\\
-\textbf{DescripciÛn:} El sistema debe tener un registro de las ·reas que tiene cada sucursal, las cuales se identifican en el sistema por una clave ˙nica.\\
+\textbf{Nombre:} Control de √°reas\\
+\textbf{Descripci√≥n:} El sistema debe tener un registro de las √°reas que tiene cada sucursal, las cuales se identifican en el sistema por una clave √∫nica.\\
 
 ID: R11
-Nombre: Horarios de ·reas
-DescripciÛn: El sistema guardar· los horarios en los cuales se pueden usar cada ·rea asÌ como sus horas o dÌas de mantenimiento si es que se requiere en dicha ·rea.
+Nombre: Horarios de √°reas
+Descripci√≥n: El sistema guardar√° los horarios en los cuales se pueden usar cada √°rea as√≠ como sus horas o d√≠as de mantenimiento si es que se requiere en dicha √°rea.
 
 ID: RS12
-Nombre: Registro de MembresÌas
-DescripciÛn: El sistema tendr· un registro de membresÌas vendidas con los clientes a los cuales le ha vendido y su n˙mero de pago relacionado.
+Nombre: Registro de Membres√≠as
+Descripci√≥n: El sistema tendr√° un registro de membres√≠as vendidas con los clientes a los cuales le ha vendido y su n√∫mero de pago relacionado.
 
 ID: RS13
 Nombre: Registro de clientes
-DescripciÛn: El sistema registrar· clientes a los cuales se le vende una membresÌa con las actividades que realiza o realizar· cada cliente y con los servicios a los cuales tiene derecho de ocupar por el tipo de membresÌa que tiene.
+Descripci√≥n: El sistema registrar√° clientes a los cuales se le vende una membres√≠a con las actividades que realiza o realizar√° cada cliente y con los servicios a los cuales tiene derecho de ocupar por el tipo de membres√≠a que tiene.
 
 ID: RS14
-Nombre: Diferentes membresÌas
-DescripciÛn: El sistema tendr· diferencias entre cada tipo de membresÌa contratada por cada cliente.
+Nombre: Diferentes membres√≠as
+Descripci√≥n: El sistema tendr√° diferencias entre cada tipo de membres√≠a contratada por cada cliente.
 
 ID: RS15
 Nombre: Pago
-DescripciÛn: El sistema relacionar·n los pagos relacionados en la oficina con la membresÌa que se quiere contratar.
+Descripci√≥n: El sistema relacionar√°n los pagos relacionados en la oficina con la membres√≠a que se quiere contratar.
 
 ID: RS16
 Nombre: Registro de servicios
-DescripciÛn: El sistema debe registrar la variedad servicios que tiene el gimnasio. Al contratar un membresÌa, se le asignan los servicios correspondientes a esta. Por lo que es necesario llevar un gestiÛn de los servicios que se ofrecen.
+Descripci√≥n: El sistema debe registrar la variedad servicios que tiene el gimnasio. Al contratar un membres√≠a, se le asignan los servicios correspondientes a esta. Por lo que es necesario llevar un gesti√≥n de los servicios que se ofrecen.
 
-El administrador podr· realizar las siguientes tareas:
-Alta de servicios: incorporaciÛn de un servicio en el gimnasio
-Baja de servicios: eliminaciÛn de un servicio en el gimnasio.
+El administrador podr√° realizar las siguientes tareas:
+Alta de servicios: incorporaci√≥n de un servicio en el gimnasio
+Baja de servicios: eliminaci√≥n de un servicio en el gimnasio.
 Entradas:
 ID del servicio
            Nombre del servicio
           Encargado del servicio (puede existir o no)
-          ¡rea donde se encuentra el servicio
+          √Årea donde se encuentra el servicio
           Clientes que usan el servicio.
  
 Origen: Teclado
-Salidas: El sistema mostrar· en pantalla los servicios que se ofrecen en ese momento para que los clientes puedan acceder a ellos dependiendo su membresÌa.
+Salidas: El sistema mostrar√° en pantalla los servicios que se ofrecen en ese momento para que los clientes puedan acceder a ellos dependiendo su membres√≠a.
 
 Precondiciones:
--Deben existir alg˙n tipo de membresÌa.
+-Deben existir alg√∫n tipo de membres√≠a.
 -Cliente activo
 -Verificar que dicho servicio no se encuentre en la base de datos.
 -Postcondiciones:
-             Existir· un nuevo servicio disponible en el sistema.
-         El sistema podr· asignar alg˙n servicio a un cliente en las distintas membresÌas de     los clientes 
+             Existir√° un nuevo servicio disponible en el sistema.
+         El sistema podr√° asignar alg√∫n servicio a un cliente en las distintas membres√≠as de     los clientes 
  
 Errores:
  -En el momento de registrar un servicio, existe la posibilidad de que los tipos   de datos esperados  no corresponden.
--CaÌda de sistema durante el procesamiento de informaciÛn.
+-Ca√≠da de sistema durante el procesamiento de informaci√≥n.
 -Falta de datos por llenar.
 
 Observaciones:
 
 -Los servicios se pueden dar de alta en el sistema puede depender de la demanda que exista entre los clientes. 
 -Servicios a definirse por sucursal.
--Existe la posibilidad que algunos servicios estÈn sujetos a cupo por lo que un cliente pueden cambiar de un servicio fuese el caso.
+-Existe la posibilidad que algunos servicios est√©n sujetos a cupo por lo que un cliente pueden cambiar de un servicio fuese el caso.
 
 Requisito relacionado: RU7
 
 
 ID: RS17
-Nombre: Registro de Actividad en ¡rea de Sucursal
-DescripciÛn: El sistema debe poder registrar una actividad en determinada ·rea de la Sucursal, en un Horario establecido, pudiendo asignarle un Instructor responsable de dicha actividad.
+Nombre: Registro de Actividad en √Årea de Sucursal
+Descripci√≥n: El sistema debe poder registrar una actividad en determinada √°rea de la Sucursal, en un Horario establecido, pudiendo asignarle un Instructor responsable de dicha actividad.
 Entradas: nombreActividad, descripcion, horarioInicio, horarioTermino, instructor, dia(s)Semana, nivel, area, sucursal. 
 Origen: Teclado
-Salidas: Mensaje en Pantalla de confirmaciÛn de registro. 
+Salidas: Mensaje en Pantalla de confirmaci√≥n de registro. 
 Destino: Pantalla, Sistema.
-PrecondiciÛn: No debe existir la actividad a registrar en el mismo nivel en el ·rea a definir de la sucursal, no debe encontrarse ocupado el horario del ·rea a establecer en la sucursal elegida, no debe encontrarse el instructor asignado a otra actividad en el mismo horario y debe estar el instructor asignado a la sucursal elegida.
-PostcondiciÛn: Habr· una actividad m·s asignada a una ·rea de una sucursal en un horario establecido, con un instructor asignado en el sistema
-Errores: Que la informaciÛn registrada no correspondiera con las precondiciones establecidas
+Precondici√≥n: No debe existir la actividad a registrar en el mismo nivel en el √°rea a definir de la sucursal, no debe encontrarse ocupado el horario del √°rea a establecer en la sucursal elegida, no debe encontrarse el instructor asignado a otra actividad en el mismo horario y debe estar el instructor asignado a la sucursal elegida.
+Postcondici√≥n: Habr√° una actividad m√°s asignada a una √°rea de una sucursal en un horario establecido, con un instructor asignado en el sistema
+Errores: Que la informaci√≥n registrada no correspondiera con las precondiciones establecidas
 Observaciones: Actividad a definirse por Sucursal
 Requisito relacionado: RU8, RU10, RU12
 
 ID: RS18
-Nombre: Baja de Actividad en ¡rea de Sucursal
-DescripciÛn: El sistema debe poder dar de baja una actividad en determinada ·rea de la Sucursal, en un Horario establecido, liberando al Instructor responsable de dicha actividad en el horario previamente asignado.
-Entradas: BotÛn de bajaActividad.
+Nombre: Baja de Actividad en √Årea de Sucursal
+Descripci√≥n: El sistema debe poder dar de baja una actividad en determinada √°rea de la Sucursal, en un Horario establecido, liberando al Instructor responsable de dicha actividad en el horario previamente asignado.
+Entradas: Bot√≥n de bajaActividad.
 Origen: Teclado o Mouse.
-Salidas: Mensaje en Pantalla de confirmaciÛn de baja de registro. 
+Salidas: Mensaje en Pantalla de confirmaci√≥n de baja de registro. 
 Destino: Pantalla, Sistema.
-PrecondiciÛn: Debe existir la actividad registrada en el mismo nivel a eliminar en un ·rea predefinida en la sucursal, debe encontrarse ocupado el horario del ·rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el mismo horario y debe estar el instructor asignado a la sucursal elegida.
-PostcondiciÛn: Habr· una actividad menos asignada a una ·rea de una sucursal en un horario establecido, con un instructor liberado de dicha actividad y horario en el sistema
-Errores: Que la informaciÛn registrada no correspondiera con las precondiciones establecidas
+Precondici√≥n: Debe existir la actividad registrada en el mismo nivel a eliminar en un √°rea predefinida en la sucursal, debe encontrarse ocupado el horario del √°rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el mismo horario y debe estar el instructor asignado a la sucursal elegida.
+Postcondici√≥n: Habr√° una actividad menos asignada a una √°rea de una sucursal en un horario establecido, con un instructor liberado de dicha actividad y horario en el sistema
+Errores: Que la informaci√≥n registrada no correspondiera con las precondiciones establecidas
 Observaciones: Actividad a definirse por Sucursal
 Requisito relacionado: RU9, RU11, RU13
 
 ID: RS19
-Nombre: Cambio de Instructor de Actividad en ¡rea de Sucursal
-DescripciÛn: El sistema debe poder modificar el campo de instructor de la actividad asignada a un ·rea en determinada sucursal sin modificar otro campo
+Nombre: Cambio de Instructor de Actividad en √Årea de Sucursal
+Descripci√≥n: El sistema debe poder modificar el campo de instructor de la actividad asignada a un √°rea en determinada sucursal sin modificar otro campo
 Entradas: instructor
 Origen: Teclado
-Salidas: Mensaje en Pantalla de confirmaciÛn de cambio de instructor
+Salidas: Mensaje en Pantalla de confirmaci√≥n de cambio de instructor
 Destino: Pantalla, Sistema.
-PrecondiciÛn: Debe existir la actividad registrada en el nivel definido en la sucursal, debe encontrarse ocupado el horario del ·rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el horario especificado y debe estar el instructor asignado a la sucursal elegida, no debe encontrarse el instructor asignado a otra actividad en diferente ·rea en el mismo horario.
-PostcondiciÛn: Habr· una actividad asignada a una ·rea de una sucursal en un horario establecido, con un instructor definido en el sistema
-Errores: Que la informaciÛn registrada no correspondiera con las precondiciones establecidas
+Precondici√≥n: Debe existir la actividad registrada en el nivel definido en la sucursal, debe encontrarse ocupado el horario del √°rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el horario especificado y debe estar el instructor asignado a la sucursal elegida, no debe encontrarse el instructor asignado a otra actividad en diferente √°rea en el mismo horario.
+Postcondici√≥n: Habr√° una actividad asignada a una √°rea de una sucursal en un horario establecido, con un instructor definido en el sistema
+Errores: Que la informaci√≥n registrada no correspondiera con las precondiciones establecidas
 Observaciones: Actividad a definirse por Sucursal
 Requisito relacionado: RU14
  
 ID: RS20
-Nombre: Cambio de ¡rea de Actividad en Sucursal
-DescripciÛn: El sistema debe poder modificar el campo de ·rea de la actividad asignada a un instructor definido en determinada sucursal sin modificar otro campo
-Entradas: ·rea
+Nombre: Cambio de √Årea de Actividad en Sucursal
+Descripci√≥n: El sistema debe poder modificar el campo de √°rea de la actividad asignada a un instructor definido en determinada sucursal sin modificar otro campo
+Entradas: √°rea
 Origen: Teclado
-Salidas: Mensaje en Pantalla de confirmaciÛn de cambio de ·rea
+Salidas: Mensaje en Pantalla de confirmaci√≥n de cambio de √°rea
 Destino: Pantalla, Sistema.
-PrecondiciÛn: Debe existir la actividad registrada en el nivel definido en el ·rea existente de la sucursal, debe encontrarse ocupado el horario del ·rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el horario especificado y debe estar el instructor asignado a la sucursal elegida, no debe estar previamente ocupada el ·rea a asignar por otra actividad.
-PostcondiciÛn: Habr· una actividad asignada a una ·rea diferente de una sucursal en un horario establecido, con un instructor definido en el sistema
-Errores: Que la informaciÛn registrada no correspondiera con las precondiciones establecidas
+Precondici√≥n: Debe existir la actividad registrada en el nivel definido en el √°rea existente de la sucursal, debe encontrarse ocupado el horario del √°rea establecido en la sucursal elegida, debe encontrarse el instructor asignado dicha actividad en el horario especificado y debe estar el instructor asignado a la sucursal elegida, no debe estar previamente ocupada el √°rea a asignar por otra actividad.
+Postcondici√≥n: Habr√° una actividad asignada a una √°rea diferente de una sucursal en un horario establecido, con un instructor definido en el sistema
+Errores: Que la informaci√≥n registrada no correspondiera con las precondiciones establecidas
 Observaciones: Actividad a definirse por Sucursal
 Requisito relacionado: RU15
+\textbf{ID:} RS21\\
+\textbf{Nombre:} Registro de beneficiario\\
+\textbf{Descripci√≥n:} El sistema debe permitir el registro de a aquellos usuarios menores de 18 a√±os que deseen pertenecer al Gimnasio Atl√©tico de San Pancho y disfrutar de las distintas actividades o servicios, debe almacenar su informaci√≥n para llevar un siguiendo y control de √©l.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item Nombre
+         \item Apellido paterno
+         \item Apellido materno
+         \item CURP
+         \item Fecha de nacimiento
+         \item Sexo
+         \item ID de cliente relacionado
+         \item Parentesco con cliente
+         \item Fecha de alta en gimnasio
+         \item Nombre de sucursal de alta 
+         \item Tel√©fono celular
+         \item Edad 
+         \item Calle 
+         \item Numero interior 
+         \item Numero exterior 
+         \item Colonia/Delegaci√≥n
+         \item Codigo postal
+         \item Correo electr√≥nico
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de registro exitoso.\\
+\textbf{Destino:} Se mostrara en la pantalla del sistema que el cliente y su informacion han sido eliminados exitosamente. Base de datos del sistema\\
+\textbf{Precondici√≥n: }
+-Para poder registrar a un beneficiario es necesario que exista un cliente en la base de datos.\\ 
+-Que el beneficiario no se encuentre en la base de datos.\\
+-El beneficiario debe ser menor de 18 a√±os.\\
+-El beneficiario debe ser apto para realizar actividad f√≠sica con la finalidad de evitar  afectar su salud.\\
+\begin{itemize}
+	\item Cr√≥nicas
+	\item Generativas
+	\item Gen√©ticas
+	\item Mentales
+	\item Respiratorias
+	\item Cardiovasculares
+	\item No se permitir√° el registro a personas con capacidades diferentes, esto evitar√° posibles problemas al gimnasio en caso de accidente.
+\end{itemize}
+
+\textbf{Postcondici√≥n: }
+-Existir√° un beneficiario  en la base de datos.\\
+-El sistema permitir√° al beneficiario el acceso a los servicios y actividades del Gimnasio Atl√©tico de San Pancho.\\
+
+
+\textbf{Errores: }
+
+-Informaci√≥n del registro no corresponda con los tipos de datos esperados.\\
+-Que el beneficiario ya se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente.\\
+
+\textbf{Observaciones: }
+-Un cliente puede tener uno o varios beneficiaros.\\
+-No es obligatorio tener beneficiarios.\\
+
+\textbf{Requisito relacionado:} \\
+
+
+\textbf{ID:} RS22\\
+\textbf{Nombre:} Eliminar beneficiario\\
+\textbf{Descripci√≥n:} El sistema debe poder eliminar el registro de a aquellos usuarios menores de 18 a√±os que deseen salir  del Gimnasio Atl√©tico de San Pancho.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item ID Beneficiario
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de registro eliminado exitoso.\\
+\textbf{Destino:} Base de datos del sistema.\\
+\textbf{Precondici√≥n: }
+-Para poder eliminar a un beneficiario es necesario que exista un cliente en la base de datos con el que este relacionado.\\
+-Que el beneficiario  se encuentre en la base de datos.\\
+
+
+\textbf{Postcondici√≥n: }
+-Existir√° un beneficiario  menos para un cliente en la base de datos.\\
+-El sistema dejara de reconocer a un beneficiario.\\
+-El sistema negara los servicios y acceso a las instalaciones.\\
+
+\textbf{Errores: }
+
+-Que el beneficiario ya  no se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente.\\
+
+\textbf{Observaciones: }
+-Un cliente puede eliminar  uno o varios beneficiaros.\\
+\textbf{Requisito relacionado:} \\
+
+hfbhfdbv
+
+\textbf{ID:} RS23\\
+\textbf{Nombre:} Modificar beneficiario\\
+\textbf{Descripci√≥n:} El sistema debe poder realizar alguna modificaci√≥n en la informaci√≥n del usuario beneficiario en caso que se requiera. Esto permitir√° mantener los datos actualizados y por su puesto una mejor gesti√≥n de la informaci√≥n. Los datos como nombre, apellidos y curp, sexo, ID de cliente relacionado, Parentesco con cliente, fecha de alta en el gimnasio, nombre de sucursal de alta y fecha de nacimiento no pueden ser modificados.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item Calle 
+         \item Numero interior 
+         \item Numero exterior 
+         \item Colonia/Delegaci√≥n
+         \item Codigo postal
+         \item Correo electronico
+         \item Tel√©fono celular
+         \item Edad 
+
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de modicacion y actualizacion exitosa.\\
+\textbf{Destino:} Base de datos del sistema.\\
+\textbf{Precondici√≥n: }
+-Para poder modificar la informaci√≥n de un beneficiario es necesario que exista un cliente en la base de datos con el que este relacionado.\\
+-Que el beneficiario  se encuentre en la base de datos.\\
+
+
+\textbf{Postcondici√≥n: }
+-La base de datos del sistema estar√° actualizada.\\
+-Cambio de informaci√≥n y accesos.\\
+
+
+\textbf{Errores: }
+
+-Que el beneficiario ya  no se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente .\\
+
+
+\textbf{Observaciones: }
+-Un cliente puede eliminar  uno o varios beneficiaros.\\
+\textbf{Requisito relacionado:} \\
