@@ -287,4 +287,133 @@ Errores: Que la información registrada no correspondiera con las precondiciones
 Observaciones: Actividad a definirse por Sucursal
 Requisito relacionado: RU15
 
-jenknfkrenkrenjrenkejnker
+\textbf{ID:} RS21\\
+\textbf{Nombre:} Registro de beneficiario\\
+\textbf{Descripción:} El sistema debe permitir el registro de a aquellos usuarios menores de 18 años que deseen pertenecer al Gimnasio Atlético de San Pancho y disfrutar de las distintas actividades o servicios, debe almacenar su información para llevar un siguiendo y control de él.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item Nombre
+         \item Apellido paterno
+         \item Apellido materno
+         \item CURP
+         \item Fecha de nacimiento
+         \item Sexo
+         \item ID de cliente relacionado
+         \item Parentesco con cliente
+         \item Fecha de alta en gimnasio
+         \item Nombre de sucursal de alta 
+         \item Teléfono celular
+         \item Edad 
+         \item Calle 
+         \item Numero interior 
+         \item Numero exterior 
+         \item Colonia/Delegación
+         \item Codigo postal
+         \item Correo electrónico
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de registro exitoso.\\
+\textbf{Destino:} Base de datos del sistema\\
+\textbf{Precondición: }
+-Para poder registrar a un beneficiario es necesario que exista un cliente en la base de datos.\\ 
+-Que el beneficiario no se encuentre en la base de datos.\\
+-El beneficiario debe ser menor de 18 años.\\
+-El beneficiario debe ser apto para realizar actividad física con la finalidad de evitar  afectar su salud.\\
+\begin{itemize}
+	\item Crónicas
+	\item Generativas
+	\item Genéticas
+	\item Mentales
+	\item Respiratorias
+	\item Cardiovasculares
+	\item No se permitirá el registro a personas con capacidades diferentes, esto evitará posibles problemas al gimnasio en caso de accidente.
+\end{itemize}
+
+\textbf{Postcondición: }
+-Existirá un beneficiario  en la base de datos.\\
+-El sistema permitirá al beneficiario el acceso a los servicios y actividades del Gimnasio Atlético de San Pancho.\\
+
+
+\textbf{Errores: }
+
+-Información del registro no corresponda con los tipos de datos esperados.\\
+-Que el beneficiario ya se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente.\\
+
+\textbf{Observaciones: }
+-Un cliente puede tener uno o varios beneficiaros.\\
+-No es obligatorio tener beneficiarios.\\
+
+\textbf{Requisito relacionado:} \\
+
+
+\textbf{ID:} RS22\\
+\textbf{Nombre:} Eliminar beneficiario\\
+\textbf{Descripción:} El sistema debe poder eliminar el registro de a aquellos usuarios menores de 18 años que deseen salir  del Gimnasio Atlético de San Pancho.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item ID Beneficiario
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de registro eliminado exitoso.\\
+\textbf{Destino:} Base de datos del sistema.\\
+\textbf{Precondición: }
+-Para poder eliminar a un beneficiario es necesario que exista un cliente en la base de datos con el que este relacionado.\\
+-Que el beneficiario  se encuentre en la base de datos.\\
+
+
+\textbf{Postcondición: }
+-Existirá un beneficiario  menos para un cliente en la base de datos.\\
+-El sistema dejara de reconocer a un beneficiario.\\
+-El sistema negara los servicios y acceso a las instalaciones.\\
+
+\textbf{Errores: }
+
+-Que el beneficiario ya  no se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente.\\
+
+\textbf{Observaciones: }
+-Un cliente puede eliminar  uno o varios beneficiaros.\\
+\textbf{Requisito relacionado:} \\
+
+
+\textbf{ID:} RS23\\
+\textbf{Nombre:} Modificar beneficiario\\
+\textbf{Descripción:} El sistema debe poder realizar alguna modificación en la información del usuario beneficiario en caso que se requiera. Esto permitirá mantener los datos actualizados y por su puesto una mejor gestión de la información. Los datos como nombre, apellidos, curp, sexo, ID de cliente relacionado, Parentesco con cliente, fecha de alta en el gimnasio, nombre de sucursal de alta y fecha de nacimiento no pueden ser modificados.\\
+
+\textbf{Entradas: }
+        \begin{itemize}
+         \item Calle 
+         \item Numero interior 
+         \item Numero exterior 
+         \item Colonia/Delegación
+         \item Codigo postal
+         \item Correo electronico
+         \item Teléfono celular
+         \item Edad 
+
+\end{itemize}
+\textbf{Origen:} Teclado\\
+\textbf{Salidas:} Mensaje en el sistema de modicacion y actualizacion exitosa.\\
+\textbf{Destino:} Base de datos del sistema.\\
+\textbf{Precondición: }
+-Para poder modificar la información de un beneficiario es necesario que exista un cliente en la base de datos con el que este relacionado.\\
+-Que el beneficiario  se encuentre en la base de datos.\\
+
+
+\textbf{Postcondición: }
+-La base de datos del sistema estará actualizada.\\
+-Cambio de información y accesos.\\
+
+
+\textbf{Errores: }
+
+-Que el beneficiario ya  no se encuentre en la base de datos.\\
+-Que el beneficiario no cuente con usuario cliente .\\
+
+
+\textbf{Observaciones: }
+\\
+\textbf{Requisito relacionado:} \\
